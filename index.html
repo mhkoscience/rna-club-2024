@@ -1,0 +1,235 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta author="Michal H. Kolář">
+
+	<title>
+        Structure and dynamics of the narrowest part of the ribosome exit tunnel
+    </title>
+
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/white.mhk.css" id="theme">
+
+</head>
+	<body>
+        <div class="reveal">
+	        <div class="slides">
+<!--
+============ SLIDES START HERE ============
+-->
+
+
+<section>
+    <p>
+        contributed talk given at RNA Club, Brno, Czechia
+    </p>
+    <p>
+        Created using <a href="https://revealjs.com" target="_blank">Reveal.js</a>.
+    </p>
+    <p style="margin-top: 2em">
+        Use the right arrow to start browsing the slides.
+    </p>
+</section>
+
+
+<section data-background-image="./media/cs-01-narrow.jpg"
+         data-background-position="left"
+         data-background-size="contain"
+         data-background-color="black">
+
+    <div style="width:35%; float:right; text-align: left;">
+        <img src="./media/logos/ufch-w.png" style="width:75%">
+        <h4 style="color:white; margin-top:2em">
+           Structure and dynamics of the narrowest part of the ribosome exit tunnel 
+        </h4>
+        <h4 style="color:white; margin-top:6em; margin-bottom:1em">
+           Michal H. Kolář
+        </h4>
+        <p style="color: gray; font-size:small;">
+            A cross-section of the bacterial ribosome showing the exit tunnel with the tRNA in pink, uL4 in green, and uL22 in yellow.
+        </p>
+    </div>
+    <!--
+        Let me thank the organizers for giving me this opportunity. 
+    -->
+</section>
+
+
+<!--section style="text-align: left">
+    <img src="./media/logos/ufch.png" style="width:33%">
+    <h2 style="margin-top:1em; font-size: 49px">
+       Structure and dynamics of the narrowest part of the ribosome exit tunnel 
+    </h2>
+    <div class="leftcol">
+        <h3 style="margin-top: 3em; margin-bottom: 1em">Michal H. Kolář</h3>
+        <p>
+            <a href="#" target="_blank">https://mhko.science</a><br>
+        </p>
+    </div>
+    <div class="rightcol">
+        <video width="100%" nocontrols autoplay loop style="margin-top: 3.5em">
+            <source data-src="./media/out-rna.mp4" type="video/mp4">
+        </video>
+    </div>
+</section-->
+
+
+<section>
+    <div style="width: 100%">
+        <img src="./media/sitting2-ntk.jpg">
+        <div style="padding: 1em; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: center">
+            <img src="./media/logos/vscht.png" style="height: 60px;">
+            <img src="./media/logos/gacr.png" style="height: 70px;">
+            <img src="./media/logos/czexpats.png" style="height: 90px;">
+            <img src="./media/logos/it4i.png" style="height: 55px;">
+            <img src="./media/logos/mpcdf.png" style="height: 55px;">
+        </div>
+    </div>
+</section>
+
+
+<section>
+    <img src="./media/translation-scheme/scheme-1.png" style="width:70%">
+</section>
+
+
+<section data-background-video="./media/ribosome-intro.mp4"
+         data-background-video-loop="true"
+         data-background-color="white"
+         data-background-size="contain">
+    &nbsp;
+</section>
+
+
+<section data-background-image="./media/ribosome/ribosome-1.png"
+         data-background-size="80%">
+    <!--
+    -->
+</section>
+
+
+<section data-background-image="./media/ribosome/ribosome-2.png"
+         data-background-size="80%">
+    <!--
+    -->
+</section>
+
+
+<section data-background-image="./media/translation-scheme/scheme-2.png"
+         data-background-size="40%">
+    <!--
+    -->
+</section>
+
+
+
+<section style="text-align: left" data-background-color="#B0EEB0">
+    <h1>1</h1>
+    <h4 style="margin-top: 3em">Is the constriction site flexible?</h4>
+    Yes, is seems so. The flexibility is especially high for certain side chains of uL4 and uL22.
+</section>
+
+<section style="text-align: left" data-background-color="#B0EEB0">
+    <h1>2</h1>
+    <h4 style="margin-top: 3em">Can the constriction get closed?</h4>
+    Temporarily yes, at least for certain lengths of the nascent peptide.
+</section>
+
+<section style="text-align: left" data-background-color="#B0EEB0">
+    <h1>3</h1>
+    <h4 style="margin-top: 3em">How is the constriction affected by the nascent peptide?</h4>
+    Its structure and dynamics follows a non-trivial trend.
+</section>
+
+
+<section style="text-align: left">
+    <h3>PDB survey</h3>
+    <ul>
+        <li>over 220 structural models</li>
+        <li><i>E. coli</i> ribosomes</li>
+        <li>resolution of 4 Å or better</li>
+    </ul>
+    <h3 style="margin-top:1em">Atomistic simulations</h3>
+    <ul>
+        <li>entire ribosome in explicit water</li>
+        <li>over 2 million atoms</li>
+        <li>bias-exchange metadynamics</li>
+    </ul>
+</section>
+
+
+<section data-background-image="./media/cs-pdb/gap.png"
+         data-background-size=70%>
+    <h3 style="margin-top:0em">Width of the constrictions site</h3>
+    <!--
+    -->
+</section>
+
+
+<section data-background-image="./media/cs-pdb/rmsf.png"
+         data-background-size=50%>
+    <h3 style="margin-top:0em">Root mean square fluctuations</h3>
+    <!--
+    -->
+</section>
+
+
+<section data-background-image="./media/systems/systems.png"
+         data-background-size=70%>
+    <h3 style="margin-top:1em">Four simulated systems</h3>
+    <!--
+    -->
+</section>
+
+
+<section>
+    <!-- 
+        blank on purpose
+    -->
+</section>
+
+
+<section data-background-image="./media/vemp-anchor-struct.png"
+         data-background-size=70%>
+    <!--
+        - Typically, the nascent polypeptide is disordered within the ribosome tunnel
+        - This complicates the structural characterization of nascent polypeptides by cryo-EM or X-ray.
+        - Not the case of VemP!
+    -->
+</section>
+
+
+
+
+
+
+
+
+<!--
+============ SLIDES END HERE ============
+-->
+            </div>
+        </div>
+
+		<script src="dist/reveal.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+                autoPlayMedia: true,
+                controls: false,
+                progress: true, 
+                slideNumber: true,
+                transition: 'none', 
+                backgroundTransition: 'none',
+                center: false,
+			});
+		</script>
+	</body>
+</html>
+        
